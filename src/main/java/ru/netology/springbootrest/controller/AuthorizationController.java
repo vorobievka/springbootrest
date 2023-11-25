@@ -11,7 +11,8 @@ import java.util.List;
 
 @RestController
 public class AuthorizationController {
-//    AuthorizationService service = new AuthorizationService();
+//1) AuthorizationService service = new AuthorizationService();
+      //2) @Autowired
       @Autowired
       AuthorizationService service;
 

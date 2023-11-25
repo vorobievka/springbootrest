@@ -9,8 +9,9 @@ import java.util.List;
 
 @Service
 public class AuthorizationService {
-//    UserRepository userRepository = new UserRepository();
+//1) UserRepository userRepository = new UserRepository();
 
+//2) @Autowired
     @Autowired
     UserRepository userRepository;
 
