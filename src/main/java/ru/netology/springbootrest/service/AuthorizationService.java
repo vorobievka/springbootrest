@@ -9,11 +9,14 @@ import java.util.List;
 
 @Service
 public class AuthorizationService {
-//1) UserRepository userRepository = new UserRepository();
+//   1) UserRepository userRepository = new UserRepository();
+//   2) @Autowired
 
-//2) @Autowired
-    @Autowired
-    UserRepository userRepository;
+    final UserRepository userRepository;
+
+    public AuthorizationService(){
+        this.userRepository = new UserRepository();
+    }
 
     public List<Authorities> getAuthorities(String user, String password) {
         if (isEmpty(user) || isEmpty(password)) {
