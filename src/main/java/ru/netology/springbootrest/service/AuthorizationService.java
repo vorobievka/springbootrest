@@ -12,7 +12,7 @@ public class AuthorizationService {
 //   1) UserRepository userRepository = new UserRepository();
 //   2) @Autowired
 
-    final UserRepository userRepository;
+    private UserRepository userRepository;
 
     public AuthorizationService(){
         this.userRepository = new UserRepository();

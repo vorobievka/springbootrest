@@ -14,7 +14,7 @@ public class AuthorizationController {
 //      1) AuthorizationService service = new AuthorizationService();
 //      2) @Autowired
 
-      final AuthorizationService service;
+      private AuthorizationService service;
 
       public AuthorizationController(){
           this.service = new AuthorizationService();
